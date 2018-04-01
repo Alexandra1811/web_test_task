@@ -1,0 +1,228 @@
+body{
+    background-image: url(../img/large_back.jpg);
+    color: #fff;
+    background-size: cover;
+    font-family: 'Open Sans';
+}
+.jumbotron {
+    /*padding: 30px;*/
+    margin-bottom: 30px;
+    color: inherit;
+}
+.jumbotron .container {
+    text-align: center;
+    margin-top: 60px;
+}
+.jumbotron .container h1{
+    font-size: 42px;
+}
+.jumbotron .container h2{
+    padding: 0 80px;
+    font-weight: lighter;
+    font-size: 40px;
+    line-height: 1.4;
+}
+.container h4{
+    font-weight: 650;
+    margin: 25px auto;
+}
+.container h5{
+    font-size: 15px;
+}
+.hidden_text{
+    font-size: 13px;
+}
+
+.jumbotron h1,.jumbotron .h1{
+    color:inherit
+}
+.jumbotron p{
+    margin-bottom:15px;font-size:21px;font-weight:200
+}
+.container .jumbotron{
+    border-radius:6px
+}
+.jumbotron .container{
+    max-width:100%
+}
+.hidden_text{
+    display:none;
+}
+.ribbon {
+    margin-top:15px;
+}
+.btn-info {
+    background-color: #00aeef;
+    width: 285px;
+    height: 45px;
+    margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+    .main_c{
+        margin-top: 65px;
+        min-width: 1365px;
+    }
+    .row {
+        width: 100%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    .row_bottom {
+        padding-left: 17%;
+        padding-right: 10%;
+    }
+
+    .thumbnail{
+        width: 385px;
+        float: left;
+        text-align: center;
+        height: 280px;
+        border: none;
+        padding: 0;
+        margin: 30px;
+    }
+    .thumbnail_inner{
+        width: 100%;
+        text-align: center;
+        height: 280px;
+        padding: 55px 17px;
+        display: block;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        line-height: 1.42857143;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        -webkit-transition: background-color 0.5s, -webkit-transform 4s;
+        transition: background-color 0.5s, transform 4s;
+    }
+
+    /*общие hover*/
+    .thumbnail_inner:hover{
+        margin: -10px 0 10% 0;
+        padding: 25px 45px;
+        background-color: #fff;
+        height: auto;
+        color: #000;
+    }
+    .thumbnail_inner:hover .hidden_text{
+         display:inline-block;
+     }
+    .thumbnail_inner:hover .hidden_str,
+    .thumbnail_inner:hover .ribbon,
+    .str_block, .str_up_block{
+        display:none;
+    }
+    .ribbon{
+        content:  url(../img/Rectangle_1.png);
+    }
+    .ribbon_block{
+        /*margin-top: 25px;*/
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    body{
+        background-image: url(../img/xsmall_back.png);
+        color: #fff;
+        background-size: cover;
+    }
+    .jumbotron .container {
+        margin: 0;
+        padding: 0;
+    }
+    .jumbotron {
+        margin: 0;
+        padding: 0 27px 0 27px;
+    }
+    .jumbotron .container h2{
+        margin: 70px 20px;
+        padding: 0;
+    }
+    .thumbnail {
+        margin: 5%;
+        -webkit-transition: unset;
+        transition: unset;
+        min-height: 180px;
+        height: auto;
+        padding:0;
+        position: relative;
+    }
+    .main_c{
+       /* margin-top: 50px;*/
+    }
+    .btn-info{
+        margin-bottom:20px;
+    }
+    .container {
+        width: unset;
+    }
+    .thumbnail_inner, .str_block, .str_up_block{
+        float:left;
+    }
+    .thumbnail_inner{
+        width: 90%;
+        margin-top: 2%;
+        clear:both;
+        padding: 0 0 0 5%;
+    }
+    .ribbon {
+        content:  url(../img/Rectangle_15.png);
+        cursor: pointer;
+        margin: 80px 10px auto;
+    }
+    .ti_active{
+        background-color: #fff;
+        color: #000;
+        overflow: auto;
+        z-index: 10;
+        padding: 0;
+        margin: 0;
+        line-height: 1.42857143;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        position: absolute;
+        width: auto;
+       /* z-index: 5;
+        height: 300px;
+        padding: 0;
+        margin: 0 11% 0 4%;
+        position: absolute;
+        width: 74%;*/
+    }
+    .ti_active .ribbon {
+        content:  url(../img/Rectangle_2.png);
+        cursor: pointer;
+        background-size: 10px 10px;
+    }
+    .ti_active .hidden_text {
+        display: inline-block;
+    }
+
+    .str_block, .str_up_block{
+        cursor: pointer;
+        width: 5%;
+    }
+    .ribbon_block{
+        display:none;
+    }
+
+
+    div.content{
+        background-color: #F9F9F9;
+        width:962px;
+        min-height:400px;
+        height:auto;
+    }
+    .clear_float {
+        clear:both;
+    }
+    div.footer {
+        background-color: #F9F9F9;
+        width:982px;
+        height:28px;
+    }
+}
+
