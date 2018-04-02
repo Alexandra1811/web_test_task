@@ -81,6 +81,7 @@ body{
         border: none;
         padding: 0;
         margin: 30px;
+        pointer-events: painted;
     }
     .thumbnail_inner{
         width: 100%;
@@ -98,12 +99,24 @@ body{
     }
 
     /*общие hover*/
+    .row .odd:hover{
+        margin-top: 3%;
+    }
+    .row .even:hover{
+        margin-top: -7%;
+    }
     .thumbnail_inner:hover{
-        margin: -10px 0 10% 0;
+
         padding: 25px 45px;
         background-color: #fff;
         height: auto;
         color: #000;
+    }
+    .row_bottom .odd:hover {
+        margin: -20px 0 0 0;
+    }
+    .row_bottom .even:hover {
+        margin: -10px 0 0 0;
     }
     .thumbnail_inner:hover .hidden_text{
          display:inline-block;
@@ -149,6 +162,7 @@ body{
         height: auto;
         padding:0;
         position: relative;
+        cursor: pointer;
     }
     .main_c{
        /* margin-top: 50px;*/
